@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+
+    <title>Personality Quiz</title>
+</head>
+<body>
+    <header class = 'header'>
+        <nav class = 'nav__container'>
+            <div class = 'nav__text'><span class = 'nav__text--color'>MEL</span> FEED</div>
+        </nav>
+        <div class = 'header__container'>
+            <div class = 'header__title'>WHICH <span class = 'header__title--stroke'>STREAMER</span> ARE YOU?</div>
+            <p class = 'header__text'>Take a quiz to see which Twitch streamer you are.</p>
+            <button class = 'header__startbutton' id = 'start'>TAKE QUIZ!</button>
+            <img class = 'header__imgs' src="" alt="rotating images of streamers">
+        </div>
+        
+    </header>
+    
+    <section class = 'content__container' id ='scrollto'>    
+        <div class = 'content__text'>
+            <span class = 'content__number' >1</span> Which game do you prefer?
+        </div>
+        <img class = 'content__img' src="imgs/xqcoverwatch.jpg" alt="xQc playing Overwatch">
+        <div class = 'content__buttoncontainer'>
+            <div class = 'content__toprow'>
+                <button class = 'content__button' id = 'overwatch'>Overwatch</button>
+                <button class = 'content__button' id = 'valorant'>Valorant</button>
+            </div>
+            <div>
+                <button class = 'content__button' id = 'CoD'>CoD</button>
+                <button class = 'content__button' id = 'none'>Not a gamer warlord</button>
+            </div>
+        </div>
+    </section>
+    <section class = 'content__container' id = 'q2container'>    
+        <div class = 'content__text'>
+            <span class = 'content__number'>2</span> Which is your favorite emote?
+        </div>
+        <img class = 'content__img' id = 'lulw'src="imgs/lulw.png" alt="Laughing emote">
+        <div class = 'content__buttoncontainer'>
+            <div class = 'content__toprow'>
+                <button class = 'content__button' id = 'pepelaugh'>Pepelaugh</button>
+                <button class = 'content__button' id = 'omegalul'>OMEGALUL</button>
+            </div>
+            <div>
+                <button class = 'content__button' id = 'pagman'>PagMan</button>
+                <button class = 'content__button' id = 'noemote'>Don't use emotes</button>
+            </div>
+        </div>
+    </section>
+    <section class = 'content__container' id = 'q3container'>    
+        <div class = 'content__text'>
+            <span class = 'content__number'>3</span> Which is your favorite animal?
+        </div>
+        <img class = 'content__img' src="imgs/alinity.png" alt="Laughing emote">
+        <div class = 'content__buttoncontainer'>
+            <div class = 'content__toprow'>
+                <button class = 'content__button' id = 'cat'>Cat <span><img id = 'teatime'src="imgs/teatime.gif" alt="Tea"></span></button>
+                <button class = 'content__button' id = 'dog'>Dog</button>
+            </div>
+            <div>
+                <button class = 'content__button' id = 'rabbit'>Rabbit</button>
+                <button class = 'content__button' id = 'nopet'>I rather not</button>
+            </div>
+        </div>
+    </section>
+    <section class = 'content__container' id = 'q4container'>    
+        <div class = 'content__text'>
+            <span class = 'content__number'>4</span> Which is your favorite drink?
+        </div>
+        <img class = 'content__img' src="imgs/gfuel.jpg" alt="xQc eating G-Fuel powder">
+        <div class = 'content__buttoncontainer'>
+            <div class = 'content__toprow'>
+                <button class = 'content__button' id = 'gfuel'>G-Fuel <span><img id = 'teatime'src="imgs/juicetime.gif" alt="Tea"></span></button>
+                <button class = 'content__button' id = 'monster'>Monster</button>
+            </div>
+            <div>
+                <button class = 'content__button' id = 'coke'>Coca Cola</button>
+                <button class = 'content__button' id = 'coffee'>Coffee</button>
+            </div>
+        </div>
+    </section>
+    <section class = 'content__container' id = 'q5container'>    
+        <div class = 'content__text'>
+            <span class = 'content__number'>5</span> Which is your favorite content to watch?
+        </div>
+        <img class = 'content__img' src="imgs/nicknmp.jpg" alt="NickNMP and Malena cooking">
+        <div class = 'content__buttoncontainer'>
+            <div class = 'content__toprow'>
+                <button class = 'content__button' id = 'react'>React Andy</button>
+                <button class = 'content__button' id = 'gaming'>Gaming</button>
+            </div>
+            <div>
+                <button class = 'content__button' id = 'chatting'>Just Chatting</button>
+                <button class = 'content__button' id = 'variety'>Variety</button>
+            </div>
+        </div>
+    </section>
+    <section class = 'content__container' id = 'q6container'>    
+        <div class = 'content__text'>
+            <span class = 'content__number'>6</span> What do you do when you lose a game?
+        </div>
+        <img class = 'content__img' src="imgs/summitpunch.gif" alt="Summit1G punching the monitor">
+        <div class = 'content__buttoncontainer'>
+            <div class = 'content__toprow'>
+                <button class = 'content__button' id ='punch'>Punch the monitor</button>
+                <button class = 'content__button' id ='slam'>Slam the desk</button>
+            </div>
+            <div>
+                <button class = 'content__button' id = 'quit'>Rage quit</button>
+                <button class = 'content__button' id = 'yell'>Yell</button>
+            </div>
+        </div>
+    </section>
+    <footer class = 'footer'>
+        <div class = 'footer__title'>YOU ARE</div>
+        <div class = 'footer__container'>
+            <img id = 'pog' src="imgs/PauseChamp.png" alt="PauseChamp emote">
+            <div id = 'loading' class = 'footer__loading'></div>
+        </div>
+        <!-- <img class = 'footer__img' src="" alt="picture of which streamer you"> -->
+
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

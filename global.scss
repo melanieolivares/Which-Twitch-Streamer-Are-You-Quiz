@@ -1,0 +1,265 @@
+$bgcolor: #0E0E10;
+$bg2color: #3B3B44;
+$textcolor: #F7F7F8;
+$lightgray: #ADADB8;
+$accentcolor: #6441A4;
+$reg: 400;
+$med: 500;
+$semi: 600;
+$bold: 700;
+
+body, html{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    background: $bgcolor;
+    font-family: 'Inter', sans-serif;
+}
+
+::selection {
+    background: $accentcolor;
+}
+
+.nav{
+    &__container{
+        display: flex;
+        align-items: center;
+    }
+    
+    &__text{
+        font-size: 2.25rem;
+        color: $textcolor;
+        font-weight: $bold;
+        margin: 28px 0 0 28px;
+        letter-spacing: .1em;
+
+        &--color{
+            color: $bgcolor;
+            background: #DAA520;
+        }
+    }
+    
+    
+}
+
+.header{
+    height: 100vh;
+    
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 90vh;
+
+    }
+    &__title{
+        z-index: 1;
+
+        font-size: 3rem;
+        color: $textcolor;
+        font-weight: $bold;
+        margin-bottom: 50px;
+        &--stroke{
+            color: $accentcolor;
+
+        }
+    }
+    &__text{
+        z-index: 1;
+
+        color: $lightgray;
+        font-size: $reg;
+        font-size: 1.5rem;
+        margin: 0;
+        margin-bottom: 100px;
+
+
+    }
+    &__startbutton{
+        z-index: 1;
+
+        width: 212px;
+        height: 70px;
+        border-radius: 10px;
+        color: $textcolor;
+        font-size: 1.5rem;
+        background: $accentcolor;
+        border: 0px;
+        transition: ease-in-out .3s;
+        &:hover{
+            background: transparent;
+            color: $accentcolor;
+            border: 2px solid $accentcolor;
+            cursor: pointer;
+        }
+    }
+    &__imgs{
+        height: 45%;
+        opacity: .1;
+        position: absolute;
+        z-index: 0;
+        border-radius: 10px;
+    }
+}
+
+.content{
+    &__container{
+        display: flex;
+        background: $bg2color;
+        height: 1150px;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__text{
+        font-weight: $med;
+        font-size: 1.5rem;
+        color: $textcolor;
+        margin: 100px 0 85px 0;
+        
+    }
+    &__number{
+        background: $accentcolor;
+        color: $bgcolor;
+        margin-right: 15px;
+        border-radius: 50%;
+        padding: 10px 20px;
+    }
+    &__img{
+        width: 70%;
+        max-width: 1000px;
+        box-shadow: -10px 10px 0px 2px #6441A4;
+        margin-bottom: 100px;
+
+    }
+    &__button{
+        font-family: 'Inter', sans-serif;
+        color: $textcolor;
+        background: $bgcolor;
+        font-size: 1.5rem;
+        border: 0;
+        border-radius: 10px;
+        width: 270px;
+        height: 80px;
+        cursor: pointer;
+        transition: ease-in-out .3s;
+        
+        &:nth-child(1){
+            margin-right: 120px;
+        }
+
+        &:hover{
+            background: $accentcolor;
+        }
+    }
+
+    &__toprow{
+        margin-bottom: 50px;
+        
+    }
+    
+    
+
+}
+
+.footer{
+    height: 1100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__title{
+        color: $textcolor;
+        font-size: 3rem;
+        font-weight: $bold;
+        margin: 100px 0 70px 0;
+    }
+    &__container{
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 100px;    
+    }
+    &__loading{
+        color: $textcolor;
+        font-size: 5rem;
+        &:after{
+            content: ' .';
+            animation: dots 1.5s steps(5, end) infinite;
+        }
+    }
+
+    &__img{
+        width: 50%;
+        max-width: 700px;
+        box-shadow: -10px 10px 0px 2px #6441A4;
+
+    }
+    &__text{
+        color: $accentcolor;
+        font-size: 2.25rem;
+        font-weight: $semi;
+        margin-top: 50px;
+
+    }
+
+}
+
+@keyframes dots {
+    0%, 20% {
+      color: rgba(0,0,0,0);
+      text-shadow:
+        .25em 0 0 rgba(0,0,0,0),
+        .5em 0 0 rgba(0,0,0,0);}
+    40% {
+      color: white;
+      text-shadow:
+        .25em 0 0 rgba(0,0,0,0),
+        .5em 0 0 rgba(0,0,0,0);}
+    60% {
+      text-shadow:
+        .25em 0 0 white,
+        .5em 0 0 rgba(0,0,0,0);}
+    80%, 100% {
+      text-shadow:
+        .25em 0 0 white,
+        .5em 0 0 white;}
+    
+    }
+
+#pog{
+    width: 100%;
+    max-width: 128px;
+}
+
+#lulw{
+    width: 30%;
+    max-width: 450px;
+
+}
+
+#q2container{
+    height: 1030px;
+}
+#q6container{
+    height: 1225px;
+}
+
+#teatime{
+    width: 10%;
+
+}
+
+.chosen{
+    background: $accentcolor;
+}
+
+.disabled {
+    opacity: .5;
+}
+
+.disabled:hover{
+    background: $bgcolor;
+}
