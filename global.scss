@@ -111,7 +111,7 @@ body{
     &__container{
         display: flex;
         background: $bg2color;
-        height: 1150px;
+        height: 100vh;
         flex-direction: column;
         align-items: center;
     }
@@ -119,7 +119,7 @@ body{
         font-weight: $med;
         font-size: 1.5rem;
         color: $textcolor;
-        margin: 100px 0 85px 0;
+        margin: 135px 0 85px 0;
         
     }
     &__number{
@@ -162,12 +162,15 @@ body{
         
     }
     
-    
-
 }
 
+#q2text{
+    margin-top: 200px;
+}
+
+
 .footer{
-    height: 1100px;
+    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -203,6 +206,23 @@ body{
         font-weight: $semi;
         margin-top: 50px;
 
+    }
+    &__restart{
+        width: 212px;
+        height: 70px;
+        border-radius: 10px;
+        color: $textcolor;
+        font-size: 1.5rem;
+        background: $accentcolor;
+        border: 0px;
+        margin-top: 110px;
+        transition: ease-in-out .3s;
+        &:hover{
+            background: transparent;
+            color: $accentcolor;
+            border: 2px solid $accentcolor;
+            cursor: pointer;
+        }
     }
 
 }
@@ -240,12 +260,7 @@ body{
 
 }
 
-#q2container{
-    height: 1030px;
-}
-#q6container{
-    height: 1225px;
-}
+
 
 #teatime{
     width: 10%;

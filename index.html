@@ -18,13 +18,13 @@
             <div class = 'header__title'>WHICH <span class = 'header__title--stroke'>STREAMER</span> ARE YOU?</div>
             <p class = 'header__text'>Take a quiz to see which Twitch streamer you are.</p>
             <button class = 'header__startbutton' id = 'start'>TAKE QUIZ!</button>
-            <img class = 'header__imgs' src="" alt="rotating images of streamers">
+            <img class = 'header__imgs' src="imgs/xqcsmile.jpg" alt="rotating images of streamers">
         </div>
         
     </header>
     
     <section class = 'content__container' id ='scrollto'>    
-        <div class = 'content__text'>
+        <div class = 'content__text' id = 'startQuestion'>
             <span class = 'content__number' >1</span> Which game do you prefer?
         </div>
         <img class = 'content__img' src="imgs/xqcoverwatch.jpg" alt="xQc playing Overwatch">
@@ -40,7 +40,7 @@
         </div>
     </section>
     <section class = 'content__container' id = 'q2container'>    
-        <div class = 'content__text'>
+        <div class = 'content__text' id = 'q2text'>
             <span class = 'content__number'>2</span> Which is your favorite emote?
         </div>
         <img class = 'content__img' id = 'lulw'src="imgs/lulw.png" alt="Laughing emote">
@@ -125,8 +125,7 @@
             <img id = 'pog' src="imgs/PauseChamp.png" alt="PauseChamp emote">
             <div id = 'loading' class = 'footer__loading'></div>
         </div>
-        <!-- <img class = 'footer__img' src="" alt="picture of which streamer you"> -->
-
+        <!-- <button class = 'footer__restart'>Take Again</button> -->
     </footer>
 
     <script src="app.js"></script>

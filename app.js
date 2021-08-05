@@ -60,6 +60,7 @@ const result = document.querySelector('.footer')
 
 
 
+
 overwatchButton.addEventListener('click', () =>{
     xqc = parseInt(xqc) + 1;
     overwatchButton.disabled = 'true'
@@ -152,6 +153,10 @@ const noEmote = document.querySelector('#noemote');
 
 pepeLaugh.addEventListener('click', () => {
     xqc = parseInt(xqc) + 1;
+    mizkif = parseInt(mizkif) + 1;
+    soda = parseInt(soda) + 1;
+
+
     omegalul.disabled = 'true'
     pagman.disabled = 'true'
     noEmote.disabled = 'true'
@@ -170,7 +175,8 @@ pepeLaugh.addEventListener('click', () => {
 omegalul.addEventListener('click', () => {
     xqc = parseInt(xqc) + 1;
     soda = parseInt(soda) + 1;
-
+    mizkif = parseInt(mizkif) + 1;
+    nick = parseInt(nick) + 1;
 
 
     pepeLaugh.disabled = 'true'
@@ -271,6 +277,8 @@ dog.addEventListener('click', () => {
 })
 rabbit.addEventListener('click', () => {
     mizkif = parseInt(mizkif) + 1;
+    pokimane = parseInt(pokimane) + 1;
+
 
     cat.disabled = 'true'
     dog.disabled = 'true'
@@ -311,7 +319,6 @@ const coke = document.querySelector('#coke');
 const coffee = document.querySelector('#coffee');
 
 gfuel.addEventListener('click', () => {
-    xqc = parseInt(xqc) + 1;
     nickmercs = parseInt(nickmercs) + 1;
     charlie = parseInt(charlie) + 1;
     ludwig = parseInt(ludwig) + 1;
@@ -419,7 +426,6 @@ gaming.addEventListener('click', () => {
     forsen = parseInt(forsen) + 1;
     shroud = parseInt(shroud) + 1;
     tyler = parseInt(tyler) + 1;
-    xqc = parseInt(xqc) + 1;
 
 
     react.disabled = 'true'
@@ -499,7 +505,6 @@ punch.addEventListener('click', () => {
 })
 slam.addEventListener('click', () => {
     tyler = parseInt(tyler) + 1;
-    xqc = parseInt(xqc) + 1;
 
 
     punch.disabled = 'true'
@@ -539,6 +544,9 @@ yell.addEventListener('click', () => {
     ludwig = parseInt(ludwig) + 1;
     tyler = parseInt(tyler) + 1;
     tim = parseInt(tim) + 1;
+    pokimane = parseInt(pokimane) + 1;
+
+
     punch.disabled = 'true'
     slam.disabled = 'true'
     quit.disabled = 'true'
@@ -551,6 +559,7 @@ yell.addEventListener('click', () => {
     addPoint()
     result.scrollIntoView(); 
 })
+
 
 function indexOfMax(arr) {
     if (arr.length === 0) {
@@ -569,7 +578,6 @@ function indexOfMax(arr) {
 
     return maxIndex;
 }
-
 
 
 function addPoint(){
@@ -596,8 +604,28 @@ function addPoint(){
     streamerName.classList.add('footer__text')
     footer.append(streamerName)
 
+    const restart = document.createElement('button')
+    restart.append('Take Again')
+    restart.classList.add('footer__restart')
+    footer.append(restart)
+
+    const header = document.querySelector('.header')
+
+    restart.addEventListener('click', ()=>{
+        window.onbeforeunload = function() {
+            window.scrollTo(0, 0);
+        };
+        window.onbeforeunload()
+        
+    })
+    
 
 }
+
+
+
+
+
 
 
 
