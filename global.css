@@ -7,6 +7,7 @@ body, html {
 body {
   background: #0E0E10;
   font-family: 'Inter', sans-serif;
+  text-align: center;
 }
 
 ::-moz-selection {
@@ -32,6 +33,7 @@ body {
   font-weight: 700;
   margin: 28px 0 0 28px;
   letter-spacing: .1em;
+  text-indent: .1em;
 }
 
 .nav__text--color {
@@ -102,7 +104,8 @@ body {
 }
 
 .header__imgs {
-  height: 45%;
+  width: 70%;
+  max-width: 70%;
   opacity: .1;
   position: absolute;
   z-index: 0;
