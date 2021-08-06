@@ -106,6 +106,7 @@ body {
 .header__imgs {
   width: 70%;
   max-width: 70%;
+  max-height: 760px;
   opacity: .1;
   position: absolute;
   z-index: 0;
@@ -125,6 +126,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  scroll-snap-align: center;
 }
 
 .content__text {
@@ -223,7 +225,7 @@ body {
 }
 
 .footer__img {
-  width: 50%;
+  width: 70%;
   max-width: 700px;
   -webkit-box-shadow: -10px 10px 0px 2px #6441A4;
           box-shadow: -10px 10px 0px 2px #6441A4;

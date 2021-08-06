@@ -1,8 +1,3 @@
-
-
-
-
-
 function rotateImgs(){
     const img = document.querySelector('.header__imgs');
     const imgsSrc = ['imgs/xqcsmile.jpg', 'imgs/forsen.jpg', 'imgs/charlie.jpg', 'imgs/ludwig.jpg', 'imgs/Mizkif-Bald.png', 'imgs/nickmalena.jpg', 'imgs/nickmerc.jpg', 'imgs/Pokelawls-tsm.jpg', 'imgs/pokimane.jpg', 'imgs/soda.jpg', 'imgs/tim.jpg', 'imgs/tyler1.jpg']
@@ -638,4 +633,3 @@ const scrollTo = document.querySelector('#scrollto')
 startButton.addEventListener('click', ()=> {
     scrollTo.scrollIntoView(); 
 })
-
