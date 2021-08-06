@@ -42,7 +42,7 @@ body {
 }
 
 .header {
-  height: 100vh;
+  height: 1226px;
 }
 
 .header__container {
@@ -59,7 +59,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 90vh;
+  height: 1100px;
 }
 
 .header__title {
@@ -118,7 +118,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   background: #3B3B44;
-  height: 100vh;
+  height: 1226px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -183,7 +183,7 @@ body {
 }
 
 .footer {
-  height: 100vh;
+  height: 1226px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

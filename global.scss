@@ -50,14 +50,14 @@ body{
 }
 
 .header{
-    height: 100vh;
+    height: 1226px;
     
     &__container{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 90vh;
+        height: 1100px;
 
     }
     &__title{
@@ -119,7 +119,7 @@ body{
     &__container{
         display: flex;
         background: $bg2color;
-        height: 100vh;
+        height: 1226px;
         flex-direction: column;
         align-items: center;
         scroll-snap-align: center;
@@ -182,7 +182,7 @@ body{
 
 
 .footer{
-    height: 100vh;
+    height: 1226px;
     display: flex;
     align-items: center;
     flex-direction: column;
