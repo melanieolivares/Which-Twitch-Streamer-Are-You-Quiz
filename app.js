@@ -1,3 +1,11 @@
+const startButton = document.querySelector('#start')
+const scrollTo = document.querySelector('#scrollto')
+
+startButton.addEventListener('click', ()=> {
+    scrollTo.scrollIntoView(); 
+})
+
+
 function rotateImgs(){
     const img = document.querySelector('.header__imgs');
     const imgsSrc = ['imgs/xqcsmile.jpg', 'imgs/forsen.jpg', 'imgs/charlie.jpg', 'imgs/ludwig.jpg', 'imgs/Mizkif-Bald.png', 'imgs/nickmalena.jpg', 'imgs/nickmerc.jpg', 'imgs/Pokelawls-tsm.jpg', 'imgs/pokimane.jpg', 'imgs/soda.jpg', 'imgs/tim.jpg', 'imgs/tyler1.jpg']
@@ -51,7 +59,7 @@ const q3 = document.querySelector('#q3container')
 const q4 = document.querySelector('#q4container')
 const q5 = document.querySelector('#q5container')
 const q6 = document.querySelector('#q6container')
-const result = document.querySelector('.footer')
+const resultEnd = document.querySelector('.footer')
 
 
 
@@ -73,7 +81,7 @@ overwatchButton.addEventListener('click', () =>{
 
     addPoint
 
-
+    result
 
 
 
@@ -97,7 +105,7 @@ valorantButton.addEventListener('click', () => {
     q2.scrollIntoView(); 
 
     addPoint
-
+    result
 })
 codButton.addEventListener('click', () => {
     nickmercs = parseInt(nickmercs) + 1
@@ -115,7 +123,7 @@ codButton.addEventListener('click', () => {
     noneButton.classList.add('disabled')
     q2.scrollIntoView(); 
     addPoint
-
+    result
 
 })
 noneButton.addEventListener('click', () => {
@@ -137,7 +145,7 @@ noneButton.addEventListener('click', () => {
     noneButton.classList.add('chosen')
     q2.scrollIntoView(); 
     addPoint
-
+    result
 
 })
 
@@ -164,7 +172,7 @@ pepeLaugh.addEventListener('click', () => {
     noEmote.classList.add('disabled')
     q3.scrollIntoView(); 
     addPoint
-
+    result
 
 })
 omegalul.addEventListener('click', () => {
@@ -186,7 +194,7 @@ omegalul.addEventListener('click', () => {
     noEmote.classList.add('disabled')
     q3.scrollIntoView(); 
     addPoint
-
+    result
 
 })
 pagman.addEventListener('click', () => {
@@ -203,7 +211,7 @@ pagman.addEventListener('click', () => {
     noEmote.classList.add('disabled')
     q3.scrollIntoView(); 
     addPoint
-
+    result
 })
 noEmote.addEventListener('click', () => {
     shroud = parseInt(shroud) + 1;
@@ -225,7 +233,7 @@ noEmote.addEventListener('click', () => {
     noEmote.classList.add('chosen')
     q3.scrollIntoView(); 
     addPoint
-
+    result
 
 })
 
@@ -249,7 +257,7 @@ cat.addEventListener('click', () => {
     noPet.classList.add('disabled')
     q4.scrollIntoView(); 
     addPoint
-
+    result
 })
 dog.addEventListener('click', () => {
     nick = parseInt(nick) + 1;
@@ -268,7 +276,7 @@ dog.addEventListener('click', () => {
     noPet.classList.add('disabled')
     q4.scrollIntoView(); 
     addPoint
-
+    result
 })
 rabbit.addEventListener('click', () => {
     mizkif = parseInt(mizkif) + 1;
@@ -286,7 +294,7 @@ rabbit.addEventListener('click', () => {
     noPet.classList.add('disabled')
     q4.scrollIntoView(); 
     addPoint
-
+    result
 })
 noPet.addEventListener('click', () => {
     xqc = parseInt(xqc) + 1;
@@ -305,7 +313,7 @@ noPet.addEventListener('click', () => {
     noPet.classList.add('chosen')
     q4.scrollIntoView(); 
     addPoint
-
+    result
 })
 
 const gfuel = document.querySelector('#gfuel');
@@ -331,7 +339,7 @@ gfuel.addEventListener('click', () => {
     coffee.classList.add('disabled')
     q5.scrollIntoView(); 
     addPoint
-
+    result
 })
 monster.addEventListener('click', () => {
     summit = parseInt(summit) + 1;
@@ -348,7 +356,7 @@ monster.addEventListener('click', () => {
     coffee.classList.add('disabled')
     q5.scrollIntoView(); 
     addPoint
-
+    result
 })
 coke.addEventListener('click', () => {
     mizkif = parseInt(mizkif) + 1;
@@ -367,7 +375,7 @@ coke.addEventListener('click', () => {
 
     q5.scrollIntoView(); 
     addPoint
-
+    result
 
 })
 coffee.addEventListener('click', () => {
@@ -386,7 +394,7 @@ coffee.addEventListener('click', () => {
     coffee.classList.add('chosen')
     q5.scrollIntoView(); 
     addPoint
-
+    result
 })
 
 const react = document.querySelector('#react');
@@ -410,7 +418,7 @@ react.addEventListener('click', () => {
     variety.classList.add('disabled')
     q6.scrollIntoView(); 
     addPoint
-
+    result
 })
 gaming.addEventListener('click', () => {
     summit = parseInt(summit) + 1;
@@ -434,7 +442,7 @@ gaming.addEventListener('click', () => {
     variety.classList.add('disabled')
     q6.scrollIntoView(); 
     addPoint
-
+    result
 })
 chatting.addEventListener('click', () => {
     mizkif = parseInt(mizkif) + 1;
@@ -453,7 +461,7 @@ chatting.addEventListener('click', () => {
     variety.classList.add('disabled')
     q6.scrollIntoView(); 
     addPoint
-
+    result
 })
 variety.addEventListener('click', () => {
     xqc = parseInt(xqc) + 1;
@@ -472,7 +480,7 @@ variety.addEventListener('click', () => {
     variety.classList.add('chosen')
     q6.scrollIntoView(); 
     addPoint
-
+    result
 })
 
 const punch = document.querySelector('#punch');
@@ -493,9 +501,9 @@ punch.addEventListener('click', () => {
     slam.classList.add('disabled')
     quit.classList.add('disabled')
     yell.classList.add('disabled')
-    addPoint()
-    result.scrollIntoView(); 
-
+    addPoint
+    resultEnd.scrollIntoView(); 
+    result()
 
 })
 slam.addEventListener('click', () => {
@@ -511,9 +519,9 @@ slam.addEventListener('click', () => {
     slam.classList.add('chosen')
     quit.classList.add('disabled')
     yell.classList.add('disabled')
-    addPoint()
-    result.scrollIntoView(); 
-
+    addPoint
+    resultEnd.scrollIntoView(); 
+    result()
 })
 quit.addEventListener('click', () => {
     nickmercs = parseInt(nickmercs) + 1;
@@ -529,9 +537,9 @@ quit.addEventListener('click', () => {
     slam.classList.add('disabled')
     quit.classList.add('chosen')
     yell.classList.add('disabled')
-    addPoint()
-    result.scrollIntoView(); 
-
+    addPoint
+    resultEnd.scrollIntoView(); 
+    result()
 
 })
 yell.addEventListener('click', () => {
@@ -551,9 +559,23 @@ yell.addEventListener('click', () => {
     slam.classList.add('disabled')
     quit.classList.add('disabled')
     yell.classList.add('chosen')
-    addPoint()
-    result.scrollIntoView(); 
+    addPoint
+    resultEnd.scrollIntoView(); 
+    result()
 })
+
+
+function result(){
+    if(overwatchButton.classList.contains('chosen') || valorantButton.classList.contains('chosen') || codButton.classList.contains('chosen') || noneButton.classList.contains('chosen') &&
+    pepeLaugh.classList.contains('chosen') || omegalul.classList.contains('chosen') || pagman.classList.contains('chosen') || noEmote.classList.contains('chosen') && 
+    cat.classList.contains('chosen') || dog.classList.contains('chosen') || rabbit.classList.contains('chosen') || noPet.classList.contains('chosen') &&
+    gfuel.classList.contains('chosen') || monster.classList.contains('chosen') || coke.classList.contains('chosen') || coffee.classList.contains('chosen') &&
+    react.classList.contains('chosen') || gaming.classList.contains('chosen') || chatting.classList.contains('chosen') || variety.classList.contains('chosen')
+    ){
+        addPoint()
+    
+    }
+}
 
 
 function indexOfMax(arr) {
@@ -604,19 +626,27 @@ function addPoint(){
     restart.classList.add('footer__restart')
     footer.append(restart)
 
-    const header = document.querySelector('.header')
 
-    restart.addEventListener('click', ()=>{
-        window.onbeforeunload = function() {
-            window.scrollTo(0, 0);
-        };
-        window.onbeforeunload()
+    restart.addEventListener('click', () => {
         
-    })
+        window.scrollTo(0, 0);
     
+        
+    
+        startButton.addEventListener('click', () =>{
+            document.location.reload()
+
+        })
+    })
+
+    
+    
+
+
 
 }
 
+    
 
 
 
@@ -627,9 +657,3 @@ function addPoint(){
 
 
 
-const startButton = document.querySelector('#start')
-const scrollTo = document.querySelector('#scrollto')
-
-startButton.addEventListener('click', ()=> {
-    scrollTo.scrollIntoView(); 
-})
